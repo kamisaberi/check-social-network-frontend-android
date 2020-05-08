@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.splitwise:tokenautocomplete-2.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tokenautocomplete-2.0.7.aar/9889c0e9c32ebafe4521a1c1a1fb33c9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tokenautocomplete-2.0.7.aar/9889c0e9c32ebafe4521a1c1a1fb33c9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.splitwise/tokenautocomplete/2.0.7/befb3560e7bb9e737b7baf2379cb4f85d9ba71f8/tokenautocomplete-2.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

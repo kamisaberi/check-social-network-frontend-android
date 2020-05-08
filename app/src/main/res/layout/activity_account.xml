@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".fragment.AccountFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/profile_default"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgProfile"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body2"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:text="Kami Saberi" />
+
+            <TextView
+                android:id="@+id/txtNumberOfTasks"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body1"
+
+                android:layout_marginRight="20dp"
+                android:text="10"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtNumberOfFriends"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body1"
+
+                android:layout_toStartOf="@+id/txtNumberOfTasks"
+                android:text="105"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtNumberOfJobs"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body1"
+
+                android:layout_marginRight="20dp"
+                android:layout_toStartOf="@+id/txtNumberOfFriends"
+                android:text="125"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/txtPosts"
+                android:layout_width="65dp"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body2"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumberOfTasks"
+                android:layout_alignEnd="@+id/txtNumberOfTasks"
+                android:text="tasks"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtFollowings"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtPosts"
+                android:layout_alignBottom="@+id/txtPosts"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body2"
+
+                android:layout_marginRight="20dp"
+                android:layout_toStartOf="@+id/txtPosts"
+                android:text="Friends"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtFollowers"
+                android:layout_width="65dp"
+                style="@style/Reply.TextAppearance.MaterialComponents.Body2"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumberOfJobs"
+                android:layout_alignStart="@+id/txtNumberOfJobs"
+                android:layout_marginRight="20dp"
+                android:text="Jobs"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                style="@style/Reply.Widget.MaterialComponents.Button.OutlinedButton.2"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPosts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:text="Edit your profile"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcJobs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

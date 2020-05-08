@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.SplashActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/Reply.TextAppearance.MaterialComponents.Headline2.HouseGrind"
+        android:fontFamily="@font/brusher_regular"
+        android:text="Check"
+        />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rdbLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Local Server" />
+
+        <RadioButton
+            android:id="@+id/rdbGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Global Server" />
+    </RadioGroup>
+
+
+    <ImageButton
+        android:id="@+id/btnAgain"
+        android:layout_width="56dp"
+        android:src="@drawable/ic_refresh"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="CHECK"-->
+    <!--android:textSize="56sp"-->
+    <!--android:id="@+id/txtLogo"-->
+    <!--android:textColor="@color/dark_blue"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</RelativeLayout>

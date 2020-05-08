@@ -1,0 +1,314 @@
+<resources>
+
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <!--<item name="colorOnSurfaceEmphasisMedium">@color/colorOnSurface</item>-->
+
+        <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
+        <!-- General theme colors -->
+        <!--<item name="colorPrimary">#6200EE</item>-->
+        <!--<item name="colorPrimaryVariant">#3700B3</item>-->
+        <!--<item name="colorOnPrimary">#FFFFFF</item>-->
+        <!--<item name="colorSecondary">#03DAC6</item>-->
+        <!--<item name="colorSecondaryVariant">#018786</item>-->
+        <!--<item name="colorOnSecondary">#000000</item>-->
+        <!--<item name="android:colorBackground">#FFFFFF</item>-->
+        <!--<item name="colorOnBackground">#000000</item>-->
+        <!--<item name="colorSurface">#FFFFFF</item>-->
+        <!--<item name="colorOnSurface">#000000</item>-->
+        <!--<item name="colorError">#C51162</item>-->
+        <!--<item name="colorOnError">#FFFFFF</item>-->
+
+
+        <!--<item name="colorControlNormal">@color/tokyoColorNormal</item>-->
+        <!--&lt;!&ndash; Text Appearance styles &ndash;&gt;-->
+        <!--<item name="android:colorBackground">@color/tokyoBackground</item>-->
+        <!--<item name="android:colorForeground">@color/tokyoForeground</item>-->
+        <!--<item name="android:textColorLink">@color/tokyoTextColorLink</item>-->
+        <!--<item name="android:textColorLinkInverse">@color/tokyoTextColorLinkInverse</item>-->
+        <!--&lt;!&ndash; Custom attributes defined in attrs.xml &ndash;&gt;-->
+        <!--<item name="backdropDrawable">@drawable/japan</item>-->
+        <!--<item name="dividerColor">@color/tokyoDividerColor</item>-->
+        <!--<item name="themeName">@string/theme_name_tokyo</item>-->
+        <!--<item name="themeDescription">@string/theme_desc_tokyo</item>-->
+        <!--<item name="tabLayoutStyle">@style/TabStyle.Light</item>-->
+        <!--<item name="actionBarStyle">@style/ThemeOverlay.Tokyo.ActionBar</item>-->
+    </style>
+
+    <style name="Theme.MyApp.NoActionBar" parent="Theme.MyApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.MyApp.Settings" parent="Theme.MyApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="Theme.MyApp.BottomSheetDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">16sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
+        <item name="listPreferredItemHeightSmall">56dp</item><!-- item size in menu-->
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/work_sans_semibold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">60dp</item>
+    </style>
+
+
+    <style name="Reply.TextAppearance.MaterialComponents.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/work_sans_bold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.Chip.Action" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="fontFamily">@font/work_sans_bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="Reply.Widget.MaterialComponents.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="android:textSize">14dp</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.Button.OutlinedButton.2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="fontFamily">@font/work_sans_extrabold</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="fontFamily">@font/work_sans_extrabold</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+
+    <style name="Reply.Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="android:textSize">14dp</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+    <style name="Reply.Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textSize">16dp</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+    <style name="Reply.TextAppearance.MaterialComponents.Headline2.HouseGrind" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/pacifico</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">80dp</item>
+    </style>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--&lt;!&ndash;<item name="android:textColorPrimaryInverse">@color/agateBlue</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:textColorSecondary">@color/carrotOrange</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:textColorSecondaryInverse">@color/carrotOrange</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="actionBarStyle">@style/MyActionBar</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="actionMenuTextColor">#000000</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="actionMenuTextAppearance">#000000</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:textColorPrimary">#ff0808</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:colorBackground">#ff0808</item>&ndash;&gt;-->
+
+    <!--</style>-->
+
+
+    <!--<style name="AppTheme.NoActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+
+    <!--<style name="TabStyle.Light" parent="Widget.Design.TabLayout">-->
+    <!--<item name="tabTextAppearance">@style/TabTextAppearance.Dark</item>-->
+    <!--<item name="tabSelectedTextColor">@color/darkGunmetal</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabStyle.Dark" parent="Widget.Design.TabLayout">-->
+    <!--<item name="tabTextAppearance">@style/TabTextAppearance.Light</item>-->
+    <!--<item name="tabSelectedTextColor">@android:color/white</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabStyle.Dark.Serif">-->
+    <!--<item name="tabTextAppearance">@style/TabTextAppearance.Light.Serif</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabTextAppearance.Dark" parent="TextAppearance.Design.Tab">-->
+    <!--<item name="android:textColor">@color/darkGunmetal_87</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabTextAppearance.Light" parent="TextAppearance.Design.Tab">-->
+    <!--<item name="android:textColor">@color/white_87</item>-->
+    <!--</style>-->
+
+    <!--<style name="TabTextAppearance.Light.Serif">-->
+    <!--<item name="android:textColor">@color/white_87</item>-->
+    <!--<item name="android:fontFamily">serif</item>-->
+    <!--<item name="textAllCaps">false</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewStyle.Serif" parent="android:Widget.TextView">-->
+    <!--<item name="android:fontFamily">serif</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewStyle.Condensed" parent="android:Widget.TextView">-->
+    <!--<item name="android:fontFamily">sans-serif-condensed</item>-->
+    <!--</style>-->
+
+    <!--<style name="PaletteItem">-->
+    <!--<item name="android:layout_width">0dp</item>-->
+    <!--<item name="android:layout_height">match_parent</item>-->
+    <!--<item name="android:layout_weight">1</item>-->
+    <!--<item name="android:gravity">center_horizontal</item>-->
+    <!--<item name="android:padding">2dp</item>-->
+    <!--<item name="android:paddingTop">4dp</item>-->
+    <!--<item name="android:paddingBottom">4dp</item>-->
+    <!--<item name="android:minHeight">48dp</item>-->
+    <!--<item name="android:textSize">10dp</item>-->
+    <!--<item name="android:textColor">@color/gray_87</item>-->
+    <!--<item name="android:breakStrategy" tools:targetApi="m">balanced</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextSample">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_marginLeft">16dp</item>-->
+    <!--<item name="android:layout_marginRight">16dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextView">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_marginLeft">4dp</item>-->
+    <!--<item name="android:layout_marginRight">4dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextSample.Inverse">-->
+    <!--<item name="android:layout_marginLeft">8dp</item>-->
+    <!--<item name="android:layout_marginRight">8dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="ViewSample">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_gravity">center_vertical</item>-->
+    <!--<item name="android:paddingTop">4dp</item>-->
+    <!--<item name="android:paddingBottom">4dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="ViewSample.Name">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_marginRight">16dp</item>-->
+    <!--<item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>-->
+    <!--<item name="android:textStyle">bold</item>-->
+    <!--</style>-->
+
+    <!--<style name="ViewSample.Description">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="RadioButton">-->
+    <!--<item name="android:textColor">@drawable/button_text_color</item>-->
+    <!--<item name="android:minHeight">33dp</item>-->
+    <!--<item name="android:minWidth">70dp</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:paddingLeft">5dp</item>-->
+    <!--<item name="android:paddingRight">5dp</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="Widget.AppCompat.EditText.Check" parent="@style/Widget.AppCompat.EditText">-->
+    <!--<item name="android:background">@drawable/edt_bg_selector</item>-->
+    <!--<item name="android:fontFamily">@font/work_sans_medium</item>-->
+    <!--</style>-->
+
+</resources>

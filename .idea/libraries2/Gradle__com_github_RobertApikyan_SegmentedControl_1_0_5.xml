@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.RobertApikyan:SegmentedControl-1.0.5">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-SegmentedControl-1.0.5.aar/043455073950bdd98b9ef39c98ba16ea/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-SegmentedControl-1.0.5.aar/043455073950bdd98b9ef39c98ba16ea/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-SegmentedControl-1.0.5.aar/043455073950bdd98b9ef39c98ba16ea/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

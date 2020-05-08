@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:descendantFocusability="blocksDescendants"
+	android:paddingBottom="16dp"
+	android:paddingTop="16dp">
+
+	<FrameLayout
+		android:id="@+id/image_util_container"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerInParent="true"
+		android:layout_marginEnd="16dp"
+		android:layout_marginRight="16dp">
+
+		<ImageView
+			android:id="@+id/dismiss_icon"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@mipmap/ic_launcher_round"
+			android:clickable="true"
+			android:contentDescription="@null"
+			android:scaleType="center"
+			android:src="@drawable/ic_drag_handle_white_24dp"/>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/title_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginEnd="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_toLeftOf="@id/image_util_container"
+		android:layout_toStartOf="@id/image_util_container"
+		android:orientation="vertical">
+
+		<!-- For marquee singleLine="true" is mandatory. Don't care about the deprecation! -->
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			android:text="test title"
+			android:textAppearance="@style/TextAppearance.AppCompat.Title"
+			android:textColor="@color/dark_blue"/>
+
+		<TextView
+			android:id="@+id/subtitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:maxLines="2"
+			android:text="test subtitle"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:textColor="@color/dark_blue"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

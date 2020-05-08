@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.redmadrobot:inputmask-3.4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inputmask-3.4.4.aar/cd6ef2b5b625000101f54904b53348b4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inputmask-3.4.4.aar/cd6ef2b5b625000101f54904b53348b4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.redmadrobot/inputmask/3.4.4/8d6157a8f182e78c3336b271359123377223da3/inputmask-3.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="dark_blue">#002880</color>
+    <color name="light_blue">#d0f0ff</color>
+    <color name="dark_gray">#404040</color>
+
+
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#232f34</color>
+    <color name="colorPrimaryVariant">#4a6572</color>
+
+    <color name="colorSecondary">#f9aa33</color>
+
+
+    <color name="colorOnSurface">#232f34</color>
+
+    <color name="colorBackground">#EDF0F2</color>
+    <color name="textColorPrimary">#1A292D</color>
+    <color name="textColorSecondary">#4a6572</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorSnackbarButton">#ef7f3e</color>
+
+    <color name="colorDrawerIcons">#686868</color>
+    <color name="colorDrawerIconsChecked">#82acf7</color>
+
+    <color name="colorDrawerBackground">#ffffff</color>
+    <color name="colorDrawerBackgroundChecked">#2d76f9</color>
+
+
+
+
+    <!-- Illini Theme -->
+    <color name="illiniColorPrimary">@color/darkGunmetal</color>
+    <color name="illiniColorPrimaryDark">@color/eerieBlack</color>
+    <color name="illiniColorAccent">@color/carrotOrange</color>
+    <color name="illiniBackground">@color/gunmetal</color>
+    <color name="illiniForeground">@color/putty</color>
+    <color name="illiniDividerColor">@color/eggshell_38</color>
+    <color name="illiniTextColorPrimary">@color/eggshell</color>
+    <color name="illiniTextColorSecondary">@color/eggshell_87</color>
+    <color name="illiniTextColorTertiary">@color/eggshell_54</color>
+    <color name="illiniTextColorLink">@color/winterBlue</color>
+    <color name="illiniTextColorPrimaryInverse">@color/darkGunmetal</color>
+    <color name="illiniTextColorSecondaryInverse">@color/darkGunmetal_54</color>
+    <color name="illiniTextColorTertiaryInverse">@color/darkGunmetal_38</color>
+    <color name="illiniTextColorLinkInverse">@color/lakeBlue</color>
+
+    <!-- Sea Foam Theme -->
+    <color name="seaFoamColorPrimary">@color/onyx</color>
+    <color name="seaFoamColorPrimaryDark">@color/raisinBlack</color>
+    <color name="seaFoamColorAccent">@color/seaFoam</color>
+    <color name="seaFoamBackground">@color/lightGray</color>
+    <color name="seaFoamForeground">@color/onyx</color>
+    <color name="seaFoamDividerColor">@color/lightGray_54</color>
+    <color name="seaFoamTextColorPrimary">@color/onyx</color>
+    <color name="seaFoamTextColorSecondary">@color/onyx_87</color>
+    <color name="seaFoamTextColorTertiary">@color/onyx_54</color>
+    <color name="seaFoamTextColorLink">@color/lakeBlue</color>
+    <color name="seaFoamTextColorPrimaryInverse">@color/lightGray</color>
+    <color name="seaFoamTextColorSecondaryInverse">@color/lightGray_87</color>
+    <color name="seaFoamTextColorTertiaryInverse">@color/lightGray_54</color>
+    <color name="seaFoamTextColorLinkInverse">@color/winterBlue</color>
+
+    <!-- Tokyo Theme -->
+    <color name="tokyoColorPrimary">@color/white</color>
+    <color name="tokyoColorPrimaryDark">@color/whiteSmoke</color>
+    <color name="tokyoColorAccent">@color/sanguineRed</color>
+    <color name="tokyoColorNormal">@color/onyx_87</color>
+    <color name="tokyoBackground">@color/lightGray</color>
+    <color name="tokyoForeground">@color/agateBlue</color>
+    <color name="tokyoDividerColor">@color/gray_38</color>
+    <color name="tokyoTextColorLink">@color/agateBlue</color>
+    <color name="tokyoTextColorLinkInverse">@color/winterBlue</color>
+
+
+
+
+
+    <color name="c_accent">#325C80</color>
+
+    <color name="c_primary">#2B4F6F</color>
+
+    <color name="c_primary_dark">#24435D</color>
+
+    <color name="floating_action_button_bg">@color/c_accent</color>
+    <color name="floating_action_button_pressed_bg">#212121</color>
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">#e0e0e0</color>
+</resources>

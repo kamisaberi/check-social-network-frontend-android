@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddDutyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.narij.checkv2.library.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segmented2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="1dp"
+        segmentedgroup:sc_corner_radius="12dp"
+        segmentedgroup:sc_tint_color="@color/tokyoColorAccent"
+        segmentedgroup:sc_unchecked_tint_color="@color/white">
+
+        <RadioButton
+            android:id="@+id/rdbInfo"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info" />
+
+        <RadioButton
+            android:id="@+id/rdbGroup"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group" />
+
+        <RadioButton
+            android:id="@+id/rdbUsers"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Users" />
+
+        <RadioButton
+            android:id="@+id/rdbDate"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+    </com.narij.checkv2.library.SegmentedGroup>
+
+
+    <!-- start of Basic Info -->
+    <LinearLayout
+        android:id="@+id/pnlBasicInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:hint="Enter Description"
+                android:lines="3"
+                android:maxLines="10"
+                android:minLines="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Priority"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcPriorities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- end of Basic Info -->
+
+
+    <!-- start of Select Group-->
+    <LinearLayout
+        android:id="@+id/pnlSelectGroups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="1">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edtGroupTitle"-->
+        <!--style="@style/TextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="enter title" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btnNewGroup"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="add" />-->
+        <!--</LinearLayout>-->
+
+        <EditText
+            android:id="@+id/edtSearchGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type group name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcGroups"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <!-- end of Select Group-->
+
+
+    <!-- start of Select Users-->
+    <LinearLayout
+        android:id="@+id/pnlSelectUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edtSearchUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search users"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:padding="4dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <!-- end of Select Users-->
+
+
+    <!-- start of Pick Date-->
+
+
+    <LinearLayout
+        android:id="@+id/pnlPickDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Switch
+                android:id="@+id/swExactTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Exact Time To Do (No Start Time)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--<Switch-->
+            <!--android:id="@+id/swStarts"-->
+            <!--style="@style/TextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:checked="false" />-->
+
+
+            <TextView
+                android:id="@+id/txtStartsLabel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Starts:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtStarts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2018/01/01"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tokyoColorAccent"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnStarts"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Pick" />
+
+        </LinearLayout>
+
+
+        <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+            android:id="@+id/dteStartEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:picker_curved="true"
+            app:picker_cyclic="true"
+            app:picker_selectedTextColor="@color/tokyoColorAccent"
+            app:picker_textColor="@color/tokyoTextColorLink"
+            app:picker_visibleItemCount="7" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--<Switch-->
+            <!--android:id="@+id/swEnds"-->
+            <!--style="@style/TextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:checked="false" />-->
+
+            <TextView
+                android:id="@+id/txtEndsLabel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Ends:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEnds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2018/01/01"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tokyoColorAccent"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnEnds"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Pick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Switch
+                android:id="@+id/swCanContinueAfterTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Can Continue After Timeout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imbtnHelpCanContinueAfterTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_help"
+                android:tint="@color/tokyoColorAccent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- end of Pick Date-->
+
+
+</LinearLayout>

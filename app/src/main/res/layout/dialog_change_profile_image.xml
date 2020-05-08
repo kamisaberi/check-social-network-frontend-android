@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        style="@style/Reply.TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Set a Profile Phote"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/btnNewProfilePhoto"
+        style="@style/Reply.Widget.MaterialComponents.Button.OutlinedButton.2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/san_francisco_display_medium"
+        android:text="New profile Photo" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#000000" />-->
+
+    <Button
+        android:id="@+id/btnRemoveProfilePhoto"
+        style="@style/Reply.Widget.MaterialComponents.Button.OutlinedButton.2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Remove profile Photo" />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.beloo.widget:ChipsLayoutManager-0.3.7">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/aaccfac6a1b67eb3fc88a1baa2785d8c/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/aaccfac6a1b67eb3fc88a1baa2785d8c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/aaccfac6a1b67eb3fc88a1baa2785d8c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

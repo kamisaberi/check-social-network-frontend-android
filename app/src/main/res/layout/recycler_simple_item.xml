@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="?android:attr/listPreferredItemHeightLarge">
+
+	<RelativeLayout
+		android:id="@+id/rear_left_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorAccent"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/left_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="16dp"
+			android:layout_marginStart="16dp"
+			android:src="@drawable/ic_drag_handle_white_24dp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/rear_right_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/dark_blue"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/right_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="16dp"
+			android:layout_marginRight="16dp"
+			android:src="@drawable/ic_drag_handle_white_24dp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/front_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingBottom="16dp"
+		android:paddingTop="16dp">
+
+		<eu.davidea.flipview.FlipView
+			android:id="@+id/image"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="16dp"
+			android:layout_marginStart="16dp"
+			android:clickable="true"
+			app:animationDuration="170"
+			app:checked="false"
+			app:enableInitialAnimation="true"
+			app:frontBackgroundColor="@color/colorAccent"
+			app:frontImage="@drawable/ic_drag_handle_white_24dp"
+			app:rearBackgroundColor="@color/colorPrimary"/>
+
+		<ImageView
+			android:id="@+id/row_handle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_marginEnd="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginStart="16dp"
+			android:src="@drawable/ic_drag_vertical_grey600_24dp"/>
+
+		<LinearLayout
+			android:id="@+id/title_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_toEndOf="@id/image"
+			android:layout_toLeftOf="@id/row_handle"
+			android:layout_toRightOf="@id/image"
+			android:layout_toStartOf="@id/row_handle"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:textAppearance="@style/TextAppearance.AppCompat.Title"
+				android:textColor="@color/colorPrimary"
+				tools:text="Title"/>
+
+			<TextView
+				android:id="@+id/subtitle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="@color/colorAccent"
+				tools:text="Subtitle"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</FrameLayout>

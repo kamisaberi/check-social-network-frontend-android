@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: eu.davidea:flexible-adapter-databinding-1.0.0-b2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/flexible-adapter-databinding-1.0.0-b2.aar/a3a049b4c15a79e7247e82362abfb13b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/flexible-adapter-databinding-1.0.0-b2.aar/a3a049b4c15a79e7247e82362abfb13b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.davidea/flexible-adapter-databinding/1.0.0-b2/7e380ce59e2c073b9b94fe865be080e57a46f3eb/flexible-adapter-databinding-1.0.0-b2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

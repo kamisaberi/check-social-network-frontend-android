@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tokyoColorAccent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:civ_border_width="0dp"
+        app:civ_border_color="@color/tokyoBackground"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/san_francisco_display_medium"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/imgProfile"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+
+    <Button
+        android:id="@+id/btnAddDuty"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:visibility="gone"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/imgMore"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:text="Add"
+        android:textColor="@color/tokyoBackground" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:src="@drawable/ic_task"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/txtTasksCount"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+    <TextView
+        android:id="@+id/txtTasksCount"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp"
+        android:gravity="center_vertical"
+        android:text="10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+
+
+    <ImageView
+        android:id="@+id/imgMore"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/ic_more_vert"
+        android:tint="@color/white" />
+
+
+</RelativeLayout>
